@@ -3,28 +3,35 @@
 //1.ornek
 
 /*
+#include <stdlib.h>
 #define SIZE 20
 
 
 int main(void) {
 	
-	char string1[SIZE];
-	char string2[] = "merhaba ben";
-	
-	
-	printf("%s", "Enter a string (no longer than 19 characters): ");
-	scanf("%19s",string1);
-	
-	
-	printf("string1 is: %s\n string2 is: %s\n"
-	"string1 with spaces between characters is:\n",
-	string1,string2);
-	
-	
-	for (size_t i = 0; i< SIZE && string1[i] != '\0'; ++i) {
-		printf ("%c ", string1[i]);
-		}
-		puts("");
+char string1[SIZE]; 
+
+// SIZE uzunluğunda bir karakter dizisi olan string1 tanımlandı
+char string2[] = "merhaba ben"; 
+
+// boyutu otomatik olarak belirlenen bir karakter dizisi olan string2 tanımlandı ve içerisine "merhaba ben" yazıldı
+
+printf("%s", "Enter a string (no longer than 19 characters): "); 
+// kullanıcıdan bir karakter dizisi girmesi istendi
+scanf("%19s",string1); 
+// girilen karakter dizisi string1'e atanır ve en fazla 19 karakter alır
+
+printf("string1 is: %s\n string2 is: %s\n"
+"string1 with spaces between characters is:\n",
+string1,string2); 
+// girilen ve hazır tanımlanmış karakter dizileri yazdırılır
+
+for (size_t i = 0; i< SIZE && string1[i] != '\0'; ++i) {
+	printf ("%c ", string1[i]); 
+    // string1'deki her karakter arasına bir boşluk koyularak yazdırılır
+	}
+	puts(""); 
+    // bir alt satıra geçmek için puts() fonksiyonu kullanılır
 	
 }
 */
@@ -32,8 +39,12 @@ int main(void) {
 //2.ornek
 
 /*
-void staticArrayInit(void);
-void automaticArrayInit(void);
+
+#include <stdlib.h>
+
+//Eğer özel olarak belirtimediyse statik diziler 0 olarak başlatırır.
+void staticArrayInit(void); //funtion prototype
+void automaticArrayInit(void); //funtion prototype
 
 int main(void)
 {
@@ -54,34 +65,42 @@ int main(void)
 	staticArrayInit();
 }
 
+//Statik Yerel diziyi gösteren fonksiyon
 void staticArrayInit(void)
 {
+
+//Fonksiyon çagrilmadan once elemanlarını 0 ile başlatır. 3 birimlik yer ayırır.
 	static int array1[3];
 	
 	puts("\n staticArrayInit fonksiyonuna deger girilmesi: ");
 	
+//dizi1 içeriğinin yazdırılması 
 	for (size_t i = 0; i <= 2; ++i){
 		printf("array1[%u] = %d ", i, array1[i]);
 	}
 	
 	puts("\n staticArrayInit fonksiyonuna deger girilmesi: ");
 	
-	
+	//dizi1 içeriğinin düzenlenmesi ve çıktısı
 	for (size_t i = 0; i<=2; ++i){
 		printf("array1[%u] = %d ", i , array1[i] += 5);
 	}
 }
 
+//Otomatik yerel dizinin gösterimi
 void automaticArrayInit(void)
 {
+//Fonksiyon her çağrıldığında bu değerlerle başlatır.
 	int array2[3] = {1,2,3};
-	puts("\n\n automaticArrayInit fonksiyouna girilen degerler: ");
 	
+	puts("\n\n automaticArrayInit fonksiyouna girilen degerler: ");
+	//dizi2 nin içeriği
 	for (size_t i = 0; i <= 2 ; ++i){
 		printf("array2[%u] = %d ", i , array2[i]);
 	}
 	puts("\n automaticArrayInit fonksiyonundaki degerler: ");
 	
+//dizi2 içeriğinin düzenlemesi ve çıktısı
 	for(size_t i = 0; i <= 2; ++i){
 		printf("array2[%u] = %d ", i , array2[i] += 5);
 	}
