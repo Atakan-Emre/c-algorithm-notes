@@ -1453,7 +1453,7 @@ int main() {
 }
 ```
 
-![Screenshot of Acrobat Pro DC (12-11-2022 15-23-00).png](Only%203abb283409a54742a5749bbbd3c37d57/Screenshot_of_Acrobat_Pro_DC_(12-11-2022_15-23-00).png)
+
 
 ```c
 #include <stdio.h>
@@ -1480,7 +1480,7 @@ int main()
 }
 ```
 
-![Screenshot of ScreenFloat (12-11-2022 16-29-31).png](Only%203abb283409a54742a5749bbbd3c37d57/Screenshot_of_ScreenFloat_(12-11-2022_16-29-31).png)
+
 
 ```c
 #include<stdio.h>
