@@ -38,3 +38,32 @@ x ve y sayisini sirasi ile giriniz: 5
 
 
 */
+
+/*
+#include <stdio.h> // printf() ve scanf() işlevleri için gerekli olan kütüphane
+#include <stdlib.h> // srand() ve rand() işlevleri için gerekli olan kütüphane
+#include <time.h> // time() işlevi için gerekli olan kütüphane
+
+int main(void)
+{
+    int iSecret, iGuess; // tahmin edilecek sayı ve kullanıcının tahmini
+
+    srand(time(NULL)); // rastgele sayı üretim sürecini etkinleştir
+    iSecret = rand() % 10 + 1; // 1 ile 10 arasında (dahil) bir sayı üret
+
+    do // tahmin yanlış olduğu sürece
+    {
+        printf("Tahmin et (1 to 10): "); // tahmin isteği
+        scanf("%d", &iGuess); // tahmin okuma
+
+        if (iSecret < iGuess) // tahmin çok yüksek
+            printf("Gizli numara daha dusuk\n");
+        else if (iSecret > iGuess) // tahmin çok düşük
+            printf("Gizli numara daha yuksek\n");
+    } while (iSecret != iGuess); // tahmin doğruysa döngüden çık
+
+    printf("Tebrikler!\n"); // tahmin doğru, oyun biter
+
+    return 0;
+}
+*/
