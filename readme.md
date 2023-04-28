@@ -7,6 +7,7 @@ Bu repo, Bilgisayar Programlama dersi kapsamında yapılan ödevlerin ve ders ma
 - `examples` : Algoritma örneklerini içerir.
 - `ders-notlari`: Ders materyallerinin ve notlarının saklandığı klasördür.
 - `odevler`: Ders kapsamında yapılan ödevlerin dosyalarını içerir.
+- `ders-notlari/allOfThem.md` : Tüm ders notlarının bulunduğu dosyadır. Bu dosyada, C programlama dili ile ilgili temel kavramlar, döngüler, karar yapıları, fonksiyonlar ve diziler gibi konular ele alınmaktadır.
 
 
 ## Nasıl Kullanılır?
