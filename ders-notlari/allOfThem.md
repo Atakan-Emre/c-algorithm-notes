@@ -1,6 +1,6 @@
 # All of them
 
-```c
+
 
 ```c
 #include <stdio.h>
@@ -1427,7 +1427,6 @@ int main(void)
 }
 ```
 
-![2022-11-11_124711.jpg](Only%203abb283409a54742a5749bbbd3c37d57/2022-11-11_124711.jpg)
 
 ```c
 #include <stdio.h>
