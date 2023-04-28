@@ -1,4 +1,6 @@
-# Only
+# All of them
+
+```c
 
 ```c
 #include <stdio.h>
@@ -721,9 +723,6 @@ int main()
 }
 ```
 
-![yazilimsihirbazi_coperatorler.jpg](Only%203abb283409a54742a5749bbbd3c37d57/yazilimsihirbazi_coperatorler.jpg)
-
-![yazilimsihirbazimantiksaloperatorler1.png](Only%203abb283409a54742a5749bbbd3c37d57/yazilimsihirbazimantiksaloperatorler1.png)
 
 ```c
 #include <stdio.h>
