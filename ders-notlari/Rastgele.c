@@ -67,3 +67,30 @@ int main() {
 
 
 */
+
+
+/*
+//Binary Search:
+#include <stdio.h>
+
+int binarySearch(int dizi[], int x, int sol, int sag) {
+    if (sag >= sol) {
+        int ortanca = sol + (sag - sol) / 2;
+
+        if (dizi[ortanca] == x)
+            return ortanca;
+
+        if (dizi[ortanca] > x)
+            return binarySearch(dizi, x, sol, ortanca - 1);
+
+        return binarySearch(dizi, x, ortanca + 1, sag);
+    }
+
+    return -1;
+}
+
+int main(void) {
+    int dizi[] = {2
+
+
+*/
