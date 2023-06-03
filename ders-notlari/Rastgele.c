@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 //Dizi Elemanlarının Ortalaması:
 int main() {
     int dizi[] = {1, 2, 3, 4, 5};
@@ -14,3 +14,27 @@ int main() {
 
     return 0;
 }
+*/
+
+/*
+//Fibonacci Serisi:
+#include <stdio.h>
+
+void fibonacci(int n) {
+    int t1 = 0, t2 = 1, nextTerm;
+
+    for (int i = 1; i <= n; ++i) {
+        printf("%d, ", t1);
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+}
+
+int main() {
+    int n = 10; 
+    fibonacci(n);
+    return 0;
+}
+
+*/
