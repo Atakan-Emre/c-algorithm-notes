@@ -38,3 +38,32 @@ int main() {
 }
 
 */
+
+/*
+//Dizi Elemanlarını Sıralama:
+#include <stdio.h>
+
+void bubbleSort(int dizi[], int boyut) {
+   for (int i = 0; i < boyut-1; i++) {     
+       for (int j = 0; j < boyut-i-1; j++) {
+           if (dizi[j] > dizi[j+1]) {
+               int temp = dizi[j];
+               dizi[j] = dizi[j+1];
+               dizi[j+1] = temp;
+           }
+       }
+   }
+}
+
+int main() {
+    int dizi[] = {64, 34, 25, 12, 22, 11, 90};
+    int boyut = sizeof(dizi)/sizeof(dizi[0]);
+    bubbleSort(dizi, boyut);
+    printf("Sorted array: \n");
+    for (int i=0; i < boyut; i++)
+        printf("%d ", dizi[i]);
+    return 0;
+}
+
+
+*/
