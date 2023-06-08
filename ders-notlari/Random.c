@@ -208,3 +208,24 @@ int main() {
 }
 
 */
+
+/*
+#include<stdio.h>
+void multiplyMatrices(int first[][10], int second[][10], int result[][10], int r1, int c1, int r2, int c2) {
+    for (int i = 0; i < r1; ++i)
+        for (int j = 0; j < c2; ++j)
+            result[i][j] = 0;
+    for (int i = 0; i < r1; ++i)
+        for (int j = 0; j < c2; ++j)
+            for (int k = 0; k < c1; ++k)
+                result[i][j] += first[i][k] * second[k][j];
+}
+int main() {
+    int first[10][10], second[10][10], result[10][10], r1, c1, r2, c2;
+    printf("Enter rows and column for the first matrix: ");
+    scanf("%d %d", &r1, &c1);
+    printf("Enter rows and column for the second matrix: ");
+    scanf("%d %d",&r2, &c2);
+    while (
+
+*/
