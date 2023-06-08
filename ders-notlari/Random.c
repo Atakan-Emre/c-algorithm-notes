@@ -128,3 +128,29 @@ int main() {
 }
 
 */
+
+/*
+#include<stdio.h>
+#include<string.h>
+int checkPalindrome(char* string) {
+    int l = 0;
+    int h = strlen(string) - 1;
+    while (h > l) {
+        if (string[l++] != string[h--]) {
+            return 0;
+        }
+    }
+    return 1;
+}
+int main() {
+    char string[100];
+    printf("Enter a string: ");
+    scanf("%s", string);
+    if (checkPalindrome(string))
+        printf("%s is a palindrome", string);
+    else
+        printf("%s is not a palindrome", string);
+    return 0;
+}
+
+*/
