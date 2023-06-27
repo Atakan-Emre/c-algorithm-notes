@@ -1,6 +1,6 @@
 # C - Algoritma Notları 
 
-Bu repo, Bilgisayar Programlama ve algoritma dersi kapsamında yapılan ödevlerin ve ders materyallerinin saklandığı bir depodur. Ders boyunca C programlama dilinde temel kavramlar, döngüler, karar yapıları, fonksiyonlar, diziler, pointerlar, structlar ve dosya işlemleri gibi konular ele alınmaktadır.
+Bu repo, Bilgisayar Programlama ve Algoritma dersi kapsamında yapılan ödevlerin ve ders materyallerinin saklandığı bir depodur. Ders boyunca C programlama dilinde temel kavramlar, döngüler, karar yapıları, fonksiyonlar, diziler, pointerlar, structlar ve dosya işlemleri gibi konular ele alınmaktadır.
 
 ## Klasörler
 
