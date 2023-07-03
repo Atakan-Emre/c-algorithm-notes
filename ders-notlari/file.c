@@ -35,3 +35,42 @@ int main() {
 
     return 0;
 }
+
+/*
+
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+
+    // Dosyayı yazma modunda açma
+    fp = fopen("test.txt", "w");
+    if(fp == NULL) {
+        printf("Dosya acilamadi!\n");
+        return 1;
+    }
+
+    // Dosyaya bir şeyler yazma
+    fprintf(fp, "Merhaba, Dünya!\n");
+    
+    // Dosyayı kapatma
+    fclose(fp);
+
+    // Dosyayı okuma modunda açma
+    fp = fopen("test.txt", "r");
+    if(fp == NULL) {
+        printf("Dosya acilamadi!\n");
+        return 1;
+    }
+
+    // Dosyadan veri okuma
+    char buffer[255];
+    fgets(buffer, 255, fp);
+    printf("%s\n", buffer);
+
+    // Dosyayı kapatma
+    fclose(fp);
+
+    return 0;
+}
+*/
