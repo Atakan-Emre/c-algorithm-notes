@@ -74,3 +74,32 @@ int main() {
     return 0;
 }
 */
+
+/*
+
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    int num, sum = 0;
+
+    // Dosyayı okuma modunda açma
+    fp = fopen("numbers.txt", "r");
+    if(fp == NULL) {
+        printf("Dosya acilamadi!\n");
+        return 1;
+    }
+
+    // Dosyadan sayıları okuma ve toplama
+    while(fscanf(fp, "%d", &num) == 1) {
+        sum += num;
+    }
+
+    printf("Toplam: %d\n", sum);
+
+    // Dosyayı kapatma
+    fclose(fp);
+
+    return 0;
+}
+*/
