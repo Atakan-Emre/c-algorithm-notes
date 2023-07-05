@@ -103,3 +103,41 @@ int main() {
     return 0;
 }
 */
+
+/*
+#include <stdio.h>
+
+int main() {
+    FILE *file;
+
+    // Dosyayı yazma modunda aç
+    file = fopen("example.txt", "w");
+    if (file == NULL) {
+        printf("Dosya açılamadı!\n");
+        return 1;
+    }
+
+    // Dosyaya metin yaz
+    fprintf(file, "Merhaba Dünya\n");
+    fclose(file);
+
+    // Dosyayı okuma modunda aç
+    file = fopen("example.txt", "r");
+    if (file == NULL) {
+        printf("Dosya açılamadı!\n");
+        return 1;
+    }
+
+    char line[100];
+
+    // Dosyadan metni oku
+    while(fgets(line, sizeof(line), file) != NULL) {
+        printf("%s", line);
+    }
+    
+    // Dosyayı kapat
+    fclose(file);
+
+    return 0;
+}
+*/
