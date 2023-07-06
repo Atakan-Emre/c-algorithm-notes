@@ -141,3 +141,34 @@ int main() {
     return 0;
 }
 */
+
+/*
+#include <stdio.h>
+
+int main() {
+    FILE *file;
+    int line_number = 3;
+    char line[150];
+    int current_line = 0;
+
+    file = fopen("example.txt", "r");
+    if (file == NULL) {
+        printf("Dosya açılamadı!\n");
+        return 1;
+    }
+
+    // belirtilen satırı oku
+    while (fgets(line, sizeof(line), file)) {
+        current_line++;
+        if (current_line == line_number) {
+            printf("%s", line);
+            break;
+        }
+    }
+
+    fclose(file);
+    
+    return 0;
+}
+
+*/
