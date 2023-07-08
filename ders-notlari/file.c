@@ -218,3 +218,30 @@ int main() {
 }
 
 */
+
+/*
+#include <stdio.h>
+
+int main() {
+    FILE *file;
+    int numbers[5] = {1, 2, 3, 4, 5};
+    int number, i;
+
+    // Write numbers to the file
+    file = fopen("numbers.txt", "w");
+    for(i = 0; i < 5; i++) {
+        fprintf(file, "%d\n", numbers[i]);
+    }
+    fclose(file);
+
+    // Read numbers from the file
+    file = fopen("numbers.txt", "r");
+    while(fscanf(file, "%d", &number) == 1) {
+        printf("%d\n", number);
+    }
+    fclose(file);
+
+    return 0;
+}
+
+*/
