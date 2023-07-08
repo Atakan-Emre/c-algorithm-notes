@@ -172,3 +172,27 @@ int main() {
 }
 
 */
+
+/*
+#include <stdio.h>
+
+int main() {
+    FILE *file;
+
+    // Dosyayı yazma modunda aç
+    file = fopen("example.txt", "w");
+    if (file == NULL) {
+        printf("Dosya açılamadı!\n");
+        return 1;
+    }
+
+    // Dosyaya bir metin yaz
+    fprintf(file, "Merhaba, Dünya!");
+
+    // Dosyayı kapat
+    fclose(file);
+    
+    return 0;
+}
+
+*/
