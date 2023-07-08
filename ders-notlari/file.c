@@ -245,3 +245,47 @@ int main() {
 }
 
 */
+
+/*
+#include <stdio.h>
+
+int main() {
+    FILE *file1, *file2;
+    char filename1[40], filename2[40];
+    char ch;
+
+    printf("Source file name: ");
+    scanf("%s", filename1);
+
+    printf("Destination file name: ");
+    scanf("%s", filename2);
+
+    // Open source file
+    file1 = fopen(filename1, "r");
+    if (file1 == NULL) {
+        printf("Cannot open source file.\n");
+        return 1;
+    }
+
+    // Open destination file
+    file2 = fopen(filename2, "w");
+    if (file2 == NULL) {
+        printf("Cannot open destination file.\n");
+        fclose(file1);
+        return 1;
+    }
+
+    // Copy file
+    while ((ch = fgetc(file1)) != EOF) {
+        fputc(ch, file2);
+    }
+
+    printf("File copied successfully.\n");
+
+    fclose(file1);
+    fclose(file2);
+
+    return 0;
+}
+
+*/
