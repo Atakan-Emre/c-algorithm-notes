@@ -64,3 +64,40 @@ int main() {
 }
 
 */
+
+/*
+#include <stdio.h>
+
+int main() {
+    int numbers[10];
+    printf("Enter 10 integers: ");
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &numbers[i]);
+    }
+    
+    FILE *fptr;
+    fptr = fopen("file3.txt", "w");
+    
+    if (fptr == NULL) {
+        printf("Error!");
+        return 1;
+    }
+
+    for (int i = 0; i < 10; i++) {
+        fprintf(fptr, "%d\n", numbers[i]);
+    }
+    fclose(fptr);
+
+    fptr = fopen("file3.txt", "r");
+    int num, sum = 0;
+    while (fscanf(fptr, "%d", &num) != EOF) {
+        sum += num;
+    }
+
+    printf("Sum of numbers is: %d", sum);
+    fclose(fptr);
+
+    return 0;
+}
+
+*/
