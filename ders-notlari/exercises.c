@@ -101,3 +101,34 @@ int main() {
 }
 
 */
+
+/*
+#include <stdio.h>
+
+int main() {
+    FILE *fptr1, *fptr2, *fptr3;
+    fptr1 = fopen("file4_1.txt", "r");
+    fptr2 = fopen("file4_2.txt", "r");
+    fptr3 = fopen("file4_3.txt", "w");
+    
+    if (fptr1 == NULL || fptr2 == NULL || fptr3 == NULL) {
+        printf("Error!");
+        return 1;
+    }
+
+    int num1, num2, sum;
+    fscanf(fptr1, "%d", &num1);
+    fscanf(fptr2, "%d", &num2);
+
+    sum = num1 + num2;
+    fprintf(fptr3, "%d", sum);
+
+    printf("Sum of numbers is: %d", sum);
+    fclose(fptr1);
+    fclose(fptr2);
+    fclose(fptr3);
+
+    return 0;
+}
+
+*/
