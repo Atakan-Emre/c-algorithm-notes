@@ -184,3 +184,31 @@ int main() {
 }
 
 */
+
+/*
+#include <stdio.h>
+#include <string.h>
+
+int isPalindrome(char str[]) {
+    int length = strlen(str);
+    for (int i = 0; i < length / 2; i++) {
+        if (str[i] != str[length-i-1]) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int main() {
+    char str[100];
+    printf("Bir kelime girin: ");
+    scanf("%s", str);
+    if (isPalindrome(str)) {
+        printf("%s palindrom bir kelime.\n", str);
+    } else {
+        printf("%s palindrom bir kelime değil.\n", str);
+    }
+    return 0;
+}
+
+*/
