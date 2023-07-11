@@ -212,3 +212,33 @@ int main() {
 }
 
 */
+
+/* 
+#include <stdio.h>
+
+int isPrime(int num) {
+    if (num <= 1) return 0; 
+    if (num <= 3) return 1; 
+
+    if (num%2 == 0 || num%3 == 0) return 0;
+
+    for (int i=5; i*i<=num; i=i+6) 
+        if (num%i == 0 || num%(i+2) == 0) 
+            return 0; 
+
+    return 1; 
+}
+
+int main() {
+    int num;
+    printf("Bir sayı girin: ");
+    scanf("%d", &num);
+    if (isPrime(num)) {
+        printf("%d bir asal sayıdır.\n", num);
+    } else {
+        printf("%d bir asal sayı değildir.\n", num);
+    }
+    return 0;
+}
+
+*/
