@@ -324,3 +324,25 @@ int main() {
 }
 
 */
+
+/*
+#include <stdio.h>
+
+int reverse(int num) {
+    int rev = 0;
+    while(num != 0) {
+        rev = rev * 10 + num % 10;
+        num /= 10;
+    }
+    return rev;
+}
+
+int main() {
+    int num;
+    printf("Bir sayı girin: ");
+    scanf("%d", &num);
+    printf("Ters çevrilmiş sayı: %d\n", reverse(num));
+    return 0;
+}
+
+*/
