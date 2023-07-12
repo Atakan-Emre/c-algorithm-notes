@@ -260,3 +260,27 @@ int main() {
 }
 
 */
+
+/*
+#include <stdio.h>
+
+void findMinMax(int arr[], int len, int* min, int* max) {
+    *min = *max = arr[0];
+    for(int i = 1; i < len; i++) {
+        if(arr[i] > *max)
+            *max = arr[i];
+        if(arr[i] < *min)
+            *min = arr[i];
+    }
+}
+
+int main() {
+    int arr[] = {12, 34, 56, 1, 22, 90, 25};
+    int min, max;
+    findMinMax(arr, sizeof(arr)/sizeof(arr[0]), &min, &max);
+    printf("En küçük eleman: %d\n", min);
+    printf("En büyük eleman: %d\n", max);
+    return 0;
+}
+
+*/
