@@ -284,3 +284,43 @@ int main() {
 }
 
 */
+
+/*
+#include <stdio.h>
+#include <math.h>
+
+int isArmstrong(int num) {
+    int originalNum, remainder, n = 0;
+    double result = 0.0;
+
+    originalNum = num;
+
+    while (originalNum != 0) {
+        originalNum /= 10;
+        ++n;
+    }
+
+    originalNum = num;
+
+    while (originalNum != 0) {
+        remainder = originalNum%10;
+        result += pow(remainder, n);
+        originalNum /= 10;
+    }
+
+    return (int)result == num;
+}
+
+int main() {
+    int num;
+    printf("Bir sayı girin: ");
+    scanf("%d", &num);
+    if (isArmstrong(num)) {
+        printf("%d bir Armstrong sayısıdır.\n", num);
+    } else {
+        printf("%d bir Armstrong sayısı değildir.\n", num);
+    }
+    return 0;
+}
+
+*/
