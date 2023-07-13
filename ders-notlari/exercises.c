@@ -462,3 +462,40 @@ Hash *createHash(int capacity)
 // Note that this is a basic example, you need to implement functions to handle putting, getting, and removing elements from the cache, as well as maintaining the ordering of elements based on their usage.
 
 */
+
+/*
+#include<stdio.h>
+#define INF 99999
+
+void dijkstra(int graph[5][5], int src)
+{
+     int dist[5];
+     int sptSet[5];
+
+     for (int i = 0; i < 5; i++)
+        dist[i] = INF, sptSet[i] = 0;
+        
+     dist[src] = 0;
+
+     for (int count = 0; count < 5-1; count++)
+     {
+       int min = INF, min_index;
+ 
+       for (int v = 0; v < 5; v++)
+         if (sptSet[v] == 0 && dist[v] <= min)
+             min = dist[v], min_index = v;
+ 
+       int u = min_index;
+ 
+       sptSet[u] = 1;
+
+       for (int v = 0; v < 5; v++)
+         if (!sptSet[v] && graph[u][v] && dist[u] != INF
+                                       && dist[u]+graph[u][v] < dist[v])
+            dist[v] = dist[u] + graph[u][v];
+     }
+}
+
+// This is a simplified implementation and does not include the complete logic and helper functions needed to run the Dijkstra’s algorithm.
+
+*/
