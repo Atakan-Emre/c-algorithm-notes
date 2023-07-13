@@ -346,3 +346,22 @@ int main() {
 }
 
 */
+
+/*
+// Bir Huffman ağacı düğümünün temsili
+struct MinHeapNode {
+    char data;             // One of the input characters
+    unsigned freq;         // Frequency of the character
+    struct MinHeapNode *left, *right; // Left and right child
+};
+
+// A utility function allocate a new min heap node with given character and frequency of the character
+struct MinHeapNode* newNode(char data, unsigned freq) {
+    struct MinHeapNode* temp = (struct MinHeapNode*) malloc(sizeof(struct MinHeapNode));
+    temp->left = temp->right = NULL;
+    temp->data = data;
+    temp->freq = freq;
+    return temp;
+}
+
+*/
