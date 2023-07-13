@@ -416,3 +416,49 @@ void mergeSort(int arr[], int l, int r) {
 }
 
 */
+
+/*
+#include<stdio.h>
+#include<stdlib.h>
+
+// A list node
+typedef struct Node
+{
+    int key;
+    int value;
+    struct Node *next, *prev;
+} Node;
+
+// A hash
+typedef struct Hash
+{
+    int capacity;
+    Node **arr;
+} Hash;
+
+// Utility function to create a new Node
+Node *newNode(int key, int value)
+{
+    Node *temp = (Node *)malloc(sizeof(Node));
+    temp->key = key;
+    temp->value = value;
+    temp->next = temp->prev = NULL;
+    return temp;
+}
+
+// Utility function to create a hash of given capacity.
+Hash *createHash(int capacity)
+{
+    Hash *hash = (Hash *)malloc(sizeof(Hash));
+    hash->capacity = capacity;
+
+    // Create a doubly linked list for each hash bucket.
+    hash->arr = (Node **)malloc(hash->capacity * sizeof(Node*));
+    for (int i = 0; i < hash->capacity; i++)
+        hash->arr[i] = NULL;
+    return hash;
+}
+
+// Note that this is a basic example, you need to implement functions to handle putting, getting, and removing elements from the cache, as well as maintaining the ordering of elements based on their usage.
+
+*/
