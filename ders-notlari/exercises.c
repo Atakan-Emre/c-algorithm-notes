@@ -789,3 +789,66 @@ int main() {
 }
 
 */
+
+/*
+
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node {
+    int data;
+    struct node *left;
+    struct node *right;
+};
+
+struct node *newNode(int data) {
+    struct node *node = (struct node *)malloc(sizeof(struct node));
+    node->data = data;
+    node->left = NULL;
+    node->right = NULL;
+    return(node);
+}
+
+void inorder(struct node *temp) {
+    if (temp != NULL) {
+        inorder(temp->left);
+        printf("%d \n", temp->data);
+        inorder(temp->right);
+    }
+}
+
+void insert(struct node* temp, int key) {
+    struct node* newnode = newNode(key);
+    struct node* x = temp;
+    struct node* y = NULL;
+
+    while (x != NULL) {
+        y = x;
+        if (key < x->data)
+            x = x->left;
+        else
+            x = x->right;
+    }
+    if (y == NULL)
+        y = newnode;
+    else if (key < y->data)
+        y->left = newnode;
+    else
+        y->right = newnode;
+}
+
+int main() {
+    struct node *root = newNode(50);
+    insert(root, 30);
+    insert(root, 20);
+    insert(root, 40);
+    insert(root, 70);
+    insert(root, 60);
+    insert(root, 80);
+
+    inorder(root);
+
+    return 0;
+}
+
+*/
