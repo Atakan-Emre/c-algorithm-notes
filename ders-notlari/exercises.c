@@ -908,3 +908,30 @@ int main() {
 }
 
 */
+
+/* 
+#include <stdio.h>
+#define SIZE 100
+
+int countOccurrences(int arr[], int n, int x) {
+    int count = 0;
+    for (int i = 0; i < n; i++)
+        if (arr[i] == x)
+            count++;
+    return count;
+}
+
+int main() {
+    int arr[SIZE], x, n;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+    printf("Enter elements: ");
+    for(int i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+    printf("Enter element to count: ");
+    scanf("%d", &x);
+    printf("%d occurs %d times\n", x, countOccurrences(arr, n, x));
+    return 0;
+}
+
+ */
