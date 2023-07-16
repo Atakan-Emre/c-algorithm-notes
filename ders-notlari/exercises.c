@@ -959,3 +959,17 @@ int main() {
 }
 
 */
+
+/*
+#include <stdio.h>
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    int i;
+    for (i=0; i<5; i++) {
+        printf("Mod of arr[%d] is %d\n", i, arr[i]%2);
+    }
+    return 0;
+}
+
+*/
