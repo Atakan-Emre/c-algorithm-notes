@@ -999,3 +999,24 @@ int main() {
 }
 
 */
+
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100], ch;
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);  
+    printf("Enter a character to find: ");
+    scanf("%c", &ch);
+    int len = strlen(str), count = 0;
+    for(int i = 0; i < len; i++) {
+        if(str[i] == ch)
+            count++;
+    }
+    printf("Frequency of %c = %d", ch, count);
+    return 0;
+}
+
+*/
