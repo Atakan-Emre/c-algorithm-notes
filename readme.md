@@ -15,7 +15,7 @@ Bu repo, Bilgisayar Programlama ve Algoritma dersi kapsamında yapılan ödevler
 Bu projeyi kullanmak için şu adımları izleyin:
 - `https://github.com/Atakan-Emre/c-algorithm-notes.git `
 
-1. Repo sayfasına gidin ve "Clone or download" butonuna tıklayın
+1. Repo sayfasına gidin ve "Clone or download" butonuna tıklayın.
 2. Açılan menüde "Download ZIP" seçeneğini seçerek repo dosyalarınızı ZIP dosyası olarak indirin.
 3. ZIP dosyasını kendi belirleyeceğiniz bir klasöre indirin ve burayı açın.
 4. ZIP dosyasındaki tüm dosya ve klasörleri kopyalayın.
